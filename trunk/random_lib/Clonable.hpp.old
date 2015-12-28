@@ -1,0 +1,22 @@
+/**
+*
+*	@Author: Kamil Zabielski
+*	@Date: 4.05.2010
+*	@File: Clonable.h
+*	@Description:
+*		Interface (abstract class) to RadomWalk and RandomSampling classes
+*		
+*/
+
+/**
+* @brief Klasa-interfejs do obsługi klonowania
+*  Obecnie ta klasa nie jest wykorzysytwana
+*/
+class Clonable{
+public: 
+	virtual ~Clonable(){};
+	Clonable(){};
+	Clonable(const Clonable&){};
+	virtual Clonable & operator=(const Clonable&)=0;
+	virtual Clonable & Clone()=0;
+};

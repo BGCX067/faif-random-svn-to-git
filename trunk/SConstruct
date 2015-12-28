@@ -1,0 +1,2 @@
+SConscript('n_puzzle/SConscript', variant_dir='webapp', duplicate=0)
+
